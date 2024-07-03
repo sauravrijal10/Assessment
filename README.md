@@ -25,7 +25,7 @@ This project is a REST API built with FastAPI that serves a list of Pokémon. Th
 
       Now you can go inside the docker container and run script.py to fetch data from the given endpoint
 
-      **pytohn3 script.py**
+      **python3 script.py**
 
       After data has been fetched to the database then data can accessed in the endpoint - http://localhost:8000/api/v1/pokemons
 
