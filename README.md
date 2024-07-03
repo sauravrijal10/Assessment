@@ -1,18 +1,32 @@
-# FastAPI Pokemon API
+# FastAPI Pokémon Project
 
-## About Project
-1. **In this project i have fetched and saved data in database from a specific endpoint with the help of script.py**
-2. **Also user can get list of all the data from database in the endpoint - http://localhost:8000/api/v1/pokemons**
-3. **To filter the data user can pass params to the above endpoint. Two params are type and name**
+## Project Description
 
+This project is a REST API built with FastAPI that serves a list of Pokémon. The API fetches data from the [PokeAPI](https://pokeapi.co/) once and stores it in a PostgreSQL database. Subsequent requests are served from the database.
 
-## Run the project
-   First of all create a virtual env and install all the dependencies from requirements.txt which i have generate from pip freeze
+## Features
 
-   After all the dependencies are installed and virtual environment is activate you can run 
+- List Pokémon with their name, image, and type
+- Filter Pokémon by name and type
+- Asynchronous database interactions using SQLAlchemy and asyncpg
+- API versioning
 
-   **alembic upgrade head**
+## Requirements
 
-   for database migration and to run the application you can use the command below
+- Docker
+- Docker Compose
 
-   **uvicorn app.main:app --reload**
+## Setup Instructions
+
+### 1. Clone the repository 
+   - To run application
+
+      **sudo docker-compose up --build**
+
+      Now you can go inside the docker container and run script.py to fetch data from the given endpoint
+
+      **pytohn3 script.py**
+
+      After data has been fetched to the database then data can accessed in the endpoint - http://localhost:8000/api/v1/pokemons
+
+      And for data filter based on name and type params can be passed to the same endpoint. The two params are name and type
