@@ -1,13 +1,13 @@
-# FastAPI Pokémon Project
+# FastAPI Pokemon Project
 
 ## Project Description
 
-This project is a REST API built with FastAPI that serves a list of Pokémon. The API fetches data from the [PokeAPI](https://pokeapi.co/) once and stores it in a PostgreSQL database. Subsequent requests are served from the database.
+This project is a REST API built with FastAPI that serves a list of Pokemon. The API fetches data from the [PokeAPI](https://pokeapi.co/) once and stores it in a PostgreSQL database. Subsequent requests are served from the database.
 
 ## Features
 
-- List Pokémon with their name, image, and type
-- Filter Pokémon by name and type
+- List Pokemon with their name, image, and type
+- Filter Pokemon by name and type
 - Asynchronous database interactions using SQLAlchemy and asyncpg
 - API versioning
 
