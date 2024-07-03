@@ -3,7 +3,7 @@ import aiohttp
 from app.db import engine, Base, get_db
 from app.crud import create_pokemon
 
-POKEAPI_URL = "https://pokeapi.co/api/v2/pokemon?limit=100"
+POKEAPI_URL = "https://pokeapi.co/api/v2/pokemon?limit=100"  #To fetch only 100 data i have set limit in emdpoint
 
 async def fetch_pokemons():
     async with aiohttp.ClientSession() as session:
